@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#F2C94B" />
+  <meta name="description" content="MOGU 馋伴产品设计案例：让每一次没做到，都还有下一次。" />
+  <title>MOGU 馋伴 · 让每一次没做到，都还有下一次</title>
+  <link rel="icon" href="assets/logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles-refresh.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到案例正文</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="MOGU 案例首页">
+      <img src="assets/logo.jpg" alt="MOGU 应用图标" />
+      <span>MOGU <em>CASE STUDY</em></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">目录</button>
+    <nav class="site-nav" id="site-nav" aria-label="案例章节">
+      <a href="#top">首页</a>
+      <a href="#research">调研</a>
+      <a href="#journey">旅程</a>
+      <a href="#problem-def">定义</a>
+      <a href="#brainstorm">发散</a>
+      <a href="#improvements">迭代</a>
+      <a href="#testing">测试</a>
+      <a href="#demo">演示</a>
+    </nav>
+    <a class="header-cta" href="https://chanban-app.pages.dev/#/me" target="_blank" rel="noopener">打开 MOGU App <span>↗</span></a>
+  </header>
+
+  <main id="main">
+
+    <!-- 01 HERO -->
+    <section class="cover" id="top" aria-labelledby="hero-title">
+      <div class="cover-grid" aria-hidden="true"></div>
+      <div class="wrap cover-inner">
+        <div class="cover-head">
+          <p class="cover-kicker">不制造焦虑的饮食记录 App</p>
+          <h1 id="hero-title">馋伴 MOGU</h1>
+        </div>
+
+        <div class="cover-scene" aria-label="MOGU 产品封面">
+          <span class="doodle doodle--clip" data-mouse="-0.6" aria-hidden="true"></span>
+          <span class="doodle doodle--pencil" data-mouse="-0.5" aria-hidden="true"></span>
+          <span class="doodle doodle--note" data-mouse="-0.7" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="doodle doodle--star" data-mouse="-0.4" aria-hidden="true">✳</span>
+          <span class="cover-badge cover-badge--smile" data-mouse="-0.5" aria-hidden="true"><i></i><i></i></span>
+          <figure class="cover-phone" data-mouse="1">
+            <span class="cover-island" aria-hidden="true"></span>
+            <img src="assets/home.png" alt="MOGU 首页" />
+          </figure>
+          <img class="cover-ip cover-ip--left" data-mouse="-0.8" src="assets/hamster-scale.png" alt="小馋站上体重秤" />
+          <img class="cover-ip cover-ip--right" data-mouse="-0.7" src="assets/hamster-lie.png" alt="躺平的小馋" />
+        </div>
+
+        <div class="cover-foot">
+          <p class="cover-footnote">6 份访谈 · 5 人可用性测试 · 一款把「没做到」也接住的饮食记录 App</p>
+          <div class="cover-actions">
+            <a class="btn btn-primary" href="#context">查看完整案例 <span>↓</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 EMPATHY -->
+    <section class="section context" id="context" aria-labelledby="context-title">
+      <div class="wrap">
+        <header class="section-head context-head" data-reveal>
+          <p class="section-index">01 / THE MOMENT</p>
+          <h2 class="section-title context-title" id="context-title">你有没有经历过这样的“破防”时刻？</h2>
+        </header>
+
+        <div class="context-body">
+          <div class="quote-row">
+            <figure class="quote-card quote-card--pink" data-reveal>
+              <span class="quote-card__no">01 / 深夜</span>
+              <blockquote>“其实我不饿，只是嘴巴想吃而已。”</blockquote>
+              <figcaption>刷到美食视频 · 嘴馋被触发</figcaption>
+            </figure>
+            <figure class="quote-card quote-card--lemon" data-reveal style="--delay:90ms">
+              <span class="quote-card__no">02 / 吃完</span>
+              <blockquote>“完了，今天又失败了。”</blockquote>
+              <figcaption>打开记录 App · 自责先于记录</figcaption>
+            </figure>
+            <figure class="quote-card quote-card--blue" data-reveal style="--delay:180ms">
+              <span class="quote-card__no">03 / 第二天</span>
+              <blockquote>“算了，下周再重新开始吧。”</blockquote>
+              <figcaption>关掉 App · 推迟到下一次</figcaption>
+            </figure>
+          </div>
+
+          <div class="mood-map" data-reveal style="--delay:120ms">
+            <p class="mood-map__label">EMOTION CURVE / 情绪起伏</p>
+            <div class="mood-track">
+              <svg class="mood-curve" viewBox="0 0 120 360" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M 60 44 C 108 96, 12 140, 60 198 S 108 268, 60 326" />
+              </svg>
+              <div class="mood-step mood-step--craving">
+                <span class="mood-icon" aria-hidden="true">😋</span>
+                <div><b>深夜馋了</b><span>被场景触发 · 期待</span></div>
+              </div>
+              <div class="mood-step mood-step--anxious">
+                <span class="mood-icon" aria-hidden="true">😰</span>
+                <div><b>吃完记录</b><span>自责与焦虑 · 低落</span></div>
+              </div>
+              <div class="mood-step mood-step--lost">
+                <span class="mood-icon" aria-hidden="true">😔</span>
+                <div><b>第二天卸载</b><span>放弃与失落 · 退出</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="context-insight" data-reveal>
+          <p>洞察：用户不需要说教，需要接住她们情绪的小帮手。</p>
+          <a class="context-insight__link" href="#research">先看用户遇到了什么 <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 FINAL PRODUCT -->
+    <section class="section product" id="product" aria-labelledby="product-title">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="section-index">02 / FINAL PRODUCT</p>
+          <h2 class="section-title" id="product-title">先把今天的下一步，放到眼前。</h2>
+          <p class="section-note">MOGU 把选餐、记录、理解与角色回应，连成一条可以重复的日常路径。</p>
+        </header>
+        <figure class="product-hero product-hero--native" data-reveal>
+          <div class="product-hero__copy">
+            <span class="mini-label">A REPEATABLE PATH / 产品先导</span>
+            <h3>不是功能堆在一起，<br />而是连成一条能回来的路。</h3>
+            <p>用户不需要理解全部功能，只要在每个关键一刻，知道下一步可以做什么。</p>
+            <ol class="path-steps">
+              <li><b>01</b><span><strong>看见今天</strong><em>今天还能吃多少，先出现在眼前。</em></span></li>
+              <li><b>02</b><span><strong>记下一餐</strong><em>拍一下就好，热量不再是额外任务。</em></span></li>
+              <li><b>03</b><span><strong>看懂变化</strong><em>用趋势解释发生了什么，不给一天打分。</em></span></li>
+              <li><b>04</b><span><strong>愿意回来</strong><em>星星、小馋和盲盒，让下一次继续发生。</em></span></li>
+            </ol>
+            <figcaption>MOGU · 一条可以重复的日常路径</figcaption>
+          </div>
+          <div class="product-hero__stage" aria-hidden="true">
+            <div class="mock-phone mock-phone--left"><img class="mock-shot" src="assets/trend.png" alt="" loading="lazy" /></div>
+            <div class="mock-phone mock-phone--right"><img class="mock-shot" src="assets/xiaochuan-new.png" alt="" loading="lazy" /></div>
+            <div class="mock-phone mock-phone--center"><img class="mock-shot" src="assets/home.png" alt="" loading="lazy" /></div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 04 RESEARCH REVERSE -->
+    <section class="section research" id="research" aria-labelledby="research-title">
+      <div class="wrap">
+        <header class="section-head section-head-light" data-reveal>
+          <p class="section-index">03 / LOOK BACK AT THE DATA</p>
+          <h2 class="section-title" id="research-title">调研数据：打败减肥的，从来不是卡路里。</h2>
+        </header>
+        <div class="stat-band" data-reveal>
+          <div class="stat-band__copy">
+            <p class="mini-label">THE REALITY / 真实的减肥困境</p>
+            <h3>减肥最难的不是开始，而是不放弃。</h3>
+            <p class="source">来源：团队前期问卷（n=112）与 6 份深度访谈综合；百分比按有效问卷统计。</p>
+          </div>
+          <div class="stat">
+            <strong>92.7<small>%</small></strong>
+            <span>有减重意愿</span>
+          </div>
+          <div class="stat">
+            <strong>74.6<small>%</small></strong>
+            <span>饮食易放弃</span>
+          </div>
+          <div class="stat-tags">
+            <span>🍔 86.2% 管不住嘴</span>
+            <span>🧮 53.7% 算热量太烦</span>
+            <span>😫 34.6% 压力大易暴食</span>
+          </div>
+        </div>
+        <p class="research-turn" data-reveal>所以真正要问的是：<strong>他们为什么放弃？</strong></p>
+        <p class="research-sub" data-reveal>不是因为缺乏意志力，而是现有的工具太反人性。</p>
+      </div>
+    </section>
+
+    <!-- 05 WHY -->
+    <section class="section why why-v2" id="why" aria-labelledby="why-title">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="section-index">04 / WHY THEY QUIT</p>
+          <h2 class="section-title" id="why-title">不是不想坚持，<br />是每一次破防都在把“继续”变难。</h2>
+          <p class="section-note">五个原因，串成一条从冲动到放弃的链；每一个都应该有清楚的产品回应。</p>
+        </header>
+
+        <div class="why-chain">
+          <article class="why-chain-card why-chain-card--1" data-reveal>
+            <div class="why-card-top"><p class="mini-label">压力大</p><span class="why-icon">🔥</span></div>
+            <h3>“今天太累了，吃点好的吧。”</h3>
+            <figure class="why-shot"><img src="assets/value-today.png" alt="一句话记录心情" loading="lazy" /></figure>
+            <div class="why-response"><span>MOGU 回应</span><p>先看情绪，再谈选择</p></div>
+          </article>
+          <article class="why-chain-card why-chain-card--2" data-reveal style="--delay:60ms">
+            <div class="why-card-top"><p class="mini-label">刷吃播</p><span class="why-icon">⚡</span></div>
+            <h3>“明明不饿，就想点一点。”</h3>
+            <figure class="why-shot"><img src="assets/why-02-choice.jpg" alt="今天吃什么：小馋帮你选或自己选" loading="lazy" /></figure>
+            <div class="why-response"><span>MOGU 回应</span><p>把眼前选择摆出来</p></div>
+          </article>
+          <article class="why-chain-card why-chain-card--3" data-reveal style="--delay:120ms">
+            <div class="why-card-top"><p class="mini-label">想吃好吃的</p><span class="why-icon">🍱</span></div>
+            <h3>“低卡的不想吃，想吃的又不敢点。”</h3>
+            <figure class="why-shot"><img src="assets/feat-dinner.png" alt="按剩余热量推荐餐食" loading="lazy" /></figure>
+            <div class="why-response"><span>MOGU 回应</span><p>口味与剩余一起给</p></div>
+          </article>
+          <article class="why-chain-card why-chain-card--4" data-reveal style="--delay:180ms">
+            <div class="why-card-top"><p class="mini-label">记录麻烦</p><span class="why-icon">⌨</span></div>
+            <h3>“吃一口还要称、查、记，太累。”</h3>
+            <figure class="why-shot"><img src="assets/value-record.png" alt="拍照记录与份量修改" loading="lazy" /></figure>
+            <div class="why-response"><span>MOGU 回应</span><p>先记后改，不求精准</p></div>
+          </article>
+          <article class="why-chain-card why-chain-card--5" data-reveal style="--delay:240ms">
+            <div class="why-card-top"><p class="mini-label">又要重新开始</p><span class="why-icon">↻</span></div>
+            <h3>“今天完了，下周再重新开始。”</h3>
+            <figure class="why-shot"><img src="assets/feat-weekly.png" alt="小馋周总结与继续记录" loading="lazy" /></figure>
+            <div class="why-response"><span>MOGU 回应</span><p>把下一次留好</p></div>
+          </article>
+        </div>
+
+        <div class="why-chain-banner" data-reveal><p>五个原因不是五个孤立问题，而是一条"触发 → 选择 → 记录 → 失败 → 放弃"的链。</p><span>压力 / 嘴馋 / 选择 / 记录 / 重启</span><img src="assets/hamster.png" alt="小馋" /></div>
+      </div>
+    </section>
+
+    <!-- 06 JOURNEY -->
+    <section class="section journey journey-v2" id="journey" aria-labelledby="journey-title">
+      <div class="wrap">
+        <header class="section-head journey-head" data-reveal>
+          <div class="journey-head__main">
+            <p class="section-index">05 / USER JOURNEY</p>
+            <h2 class="section-title" id="journey-title">小A的真实旅程，<br />和我们想象的不同。</h2>
+          </div>
+          <p class="journey-head__quote">真正击垮计划的，不是一次吃多，而是她把一次偏航，解读成"整个计划已经失败"。</p>
+        </header>
+
+        <div class="journey-profile-strip" data-reveal>
+          <div class="profile-person"><span>A</span><div><b>小A</b><em>在校学生</em></div></div>
+          <div><b>减脂目标 4kg</b><span>3 个月轻目标</span></div>
+          <div><b>状态：第 3 次重新开始</b><span>怕又失败，反复拉锯</span></div>
+          <div><b>标签：深夜刷到吃播</b><span>压力大 · 外卖</span></div>
+        </div>
+
+        <figure class="journey-board" data-reveal>
+          <div class="journey-board__head">
+            <div><span class="mini-label">一条从嘴馋到放弃的真实路径</span><h3>六个阶段：不是“嘴馋了一下”，<br />而是“今天已经失败，索性下周再来”的循环。</h3></div>
+            <p class="journey-legend">情绪曲线<br /><span>◉ 上升</span><span>◉ 回落</span></p>
+          </div>
+
+          <div class="journey-stages">
+            <article class="journey-stage journey-stage--1"><span>01</span><em>21:40</em><h4>嘴馋出现</h4><p>“其实不饿，就是嘴巴想吃。”</p></article>
+            <article class="journey-stage journey-stage--2"><span>02</span><em>21:52</em><h4>开始选餐</h4><p>“低卡的不想吃，想吃的又不敢点。”</p></article>
+            <article class="journey-stage journey-stage--3"><span>03</span><em>22:03</em><h4>点单开吃</h4><p>“就这一次，今天应该没事吧。”</p></article>
+            <article class="journey-stage journey-stage--4"><span>04</span><em>22:34</em><h4>停不下来</h4><p>“已经吃很多了，干脆吃够。”</p></article>
+            <article class="journey-stage journey-stage--5"><span>05</span><em>22:35</em><h4>事后自责</h4><p>“今天又失败了，记了更难受。”</p></article>
+            <article class="journey-stage journey-stage--6"><span>06</span><em>次日</em><h4>推迟重启</h4><p>“算了，下周再认真开始。”</p></article>
+          </div>
+
+          <div class="journey-curve-v2" aria-hidden="true">
+            <div class="faces">
+              <span data-label="冲动 · 期待">😋<i></i></span>
+              <span data-label="犹豫 · 选不动">🥺<i></i></span>
+              <span data-label="侥幸 · 先吃吧">😊<i></i></span>
+              <span data-label="失控 · 停不下">🥵<i></i></span>
+              <span data-label="内疚 · 自责">😭<i></i></span>
+              <span data-label="放弃 · 下周再说">😔<i></i></span>
+            </div>
+            <svg viewBox="0 0 1200 100" preserveAspectRatio="none"><path d="M 60 18 C 160 16, 220 48, 320 50 S 450 10, 560 20 S 690 94, 800 84 S 930 62, 1040 76 S 1120 92, 1150 94" /></svg>
+          </div>
+
+          <div class="journey-actions">
+            <article><b>MOGU 可以接住，不说教</b><span>先承认想吃，不立刻评价</span></article>
+            <article><b>给路径，不替她决定</b><span>推荐与自己找并列出现</span></article>
+            <article><b>先记后改，别打断</b><span>拍一下就好，份量可再修</span></article>
+            <article><b>用替代动作接住</b><span>给一个可以立刻做的小动作</span></article>
+            <article><b>解释，而不是评分</b><span>用趋势说明发生了什么</span></article>
+            <article><b>把下一次留好</b><span>一键轻量重启，不清零</span></article>
+          </div>
+
+          <figcaption>代表用户 / 小馋 · 来源：6 份访谈，还原一类真实失败路径。</figcaption>
+        </figure>
+
+        <div class="journey-insight-v2" data-reveal><p><b>核心洞察</b>　真正让人放弃的，不是吃多了一次，而是“今天已经失败，索性下周再来”的循环。</p><img src="assets/hamster.png" alt="小馋" /></div>
+      </div>
+    </section>
+
+    <!-- 07 PROBLEM DEFINITION -->
+    <section class="section problem-def" id="problem-def" aria-labelledby="problem-def-title">
+      <div class="wrap">
+        <div class="problem-def__inner" data-reveal>
+          <p class="section-index">05 / PROBLEM DEFINITION</p>
+          <h2 class="problem-def__title" id="problem-def-title">我们最终定义的核心问题</h2>
+
+          <p class="problem-def__statement">
+            如何帮助有健康饮食需求的用户，<span class="problem-def__hl">更轻松地了解自己的饮食状况</span>，<br />
+            <span class="problem-def__hl">做出适合自己的饮食选择</span>，<span class="problem-def__hl">并长期保持良好的饮食习惯</span>？
+          </p>
+
+          <p class="problem-def__foot">问题不再是冰冷的卡路里计算，而是关于如何让改变自然发生。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 BRAINSTORM -->
+    <section class="section brainstorm-sec" id="brainstorm" aria-labelledby="brainstorm-title">
+      <div class="wrap">
+        <div class="brainstorm" data-reveal>
+          <header>
+            <p class="section-index">06 / BRAINSTORM</p>
+            <h3 id="brainstorm-title">头脑风暴</h3>
+            <p class="brainstorm__question">先发散：如何帮助有健康饮食需求的用户，更轻松地了解自己的饮食状况，做出适合自己的饮食选择，并长期保持良好的饮食习惯？</p>
+          </header>
+          <div class="brainstorm-table">
+            <div class="idea-col idea-col--a">
+              <h4><b>第一列</b><span>帮用户看懂今天</span></h4>
+              <div class="idea-list">
+                <article class="idea"><span>01</span><p>今日剩余热量大数字</p><em>A</em></article>
+                <article class="idea"><span>02</span><p>早餐、午餐、晚餐时间轴</p><em>B</em></article>
+                <article class="idea"><span>03</span><p>拍照识别食物与热量</p><em>C</em></article>
+                <article class="idea"><span>04</span><p>份量、单位一键修改</p><em>A</em></article>
+                <article class="idea"><span>05</span><p>热量进度条与参考范围</p><em>B</em></article>
+                <article class="idea"><span>06</span><p>一句话记录今天心情</p><em>C</em></article>
+                <article class="idea"><span>07</span><p>一周热量趋势柱状图</p><em>A</em></article>
+                <article class="idea"><span>08</span><p>每周一句饮食规律总结</p><em>B</em></article>
+              </div>
+            </div>
+            <div class="idea-col idea-col--b">
+              <h4><b>第二列</b><span>帮用户选对下一餐</span></h4>
+              <div class="idea-list">
+                <article class="idea"><span>09</span><p>按剩余热量给三个餐食选项</p><em>A</em></article>
+                <article class="idea"><span>10</span><p>口味优先或低卡优先切换</p><em>B</em></article>
+                <article class="idea"><span>11</span><p>按预算、时间筛选用餐</p><em>C</em></article>
+                <article class="idea"><span>12</span><p>保留一小份想吃的食物</p><em>A</em></article>
+                <article class="idea"><span>13</span><p>高蛋白、低脂替换建议</p><em>B</em></article>
+                <article class="idea"><span>14</span><p>附近和外卖场景推荐</p><em>C</em></article>
+                <article class="idea"><span>15</span><p>一次只给一个明确选择</p><em>A</em></article>
+                <article class="idea"><span>16</span><p>吃完这餐后推荐下一餐</p><em>B</em></article>
+              </div>
+            </div>
+            <div class="idea-col idea-col--c">
+              <h4><b>第三列</b><span>帮用户愿意回来</span></h4>
+              <div class="idea-list">
+                <article class="idea"><span>17</span><p>小馋根据状态给出表情回应</p><em>C</em></article>
+                <article class="idea"><span>18</span><p>记录一餐获得星星</p><em>A</em></article>
+                <article class="idea"><span>19</span><p>星星抽盲盒、换装</p><em>B</em></article>
+                <article class="idea"><span>20</span><p>漏记或中断后不清零</p><em>C</em></article>
+                <article class="idea"><span>21</span><p>一键轻量重启</p><em>A</em></article>
+                <article class="idea"><span>22</span><p>吃多后做一次轻复盘</p><em>B</em></article>
+                <article class="idea"><span>23</span><p>桌面小组件持续提醒</p><em>C</em></article>
+                <article class="idea"><span>24</span><p>周趋势加下周一个小目标</p><em>C</em></article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09 BEFORE / AFTER -->
+    <section class="section improvements" id="improvements" aria-labelledby="improvements-title">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="section-index">07 / BEFORE &amp; AFTER</p>
+          <h2 class="section-title" id="improvements-title">产品进化：从「功能堆砌」到「做减法」</h2>
+        </header>
+
+        <div class="evolution-track" data-reveal>
+          <article class="evolution-step">
+            <p class="evolution-step__tag">V1 早期：功能大杂烩</p>
+            <figure class="evolution-phone"><img src="assets/version-01.png" alt="V1 版本界面" loading="lazy" /></figure>
+          </article>
+
+          <div class="evolution-arrow"><span>收敛</span><b>➔</b></div>
+
+          <article class="evolution-step">
+            <p class="evolution-step__tag">V2 探索：尝试分类</p>
+            <figure class="evolution-phone"><img src="assets/version-02.png" alt="V2 版本界面" loading="lazy" /></figure>
+          </article>
+
+          <div class="evolution-arrow"><span>去繁</span><b>➔</b></div>
+
+          <article class="evolution-step">
+            <p class="evolution-step__tag">V3 转折：引入情绪</p>
+            <figure class="evolution-phone"><img src="assets/version-03.png" alt="V3 版本界面" loading="lazy" /></figure>
+          </article>
+
+          <div class="evolution-arrow"><span>留核心</span><b>➔</b></div>
+
+          <article class="evolution-step evolution-step--now">
+            <p class="evolution-step__tag">V4 现在：聚焦卡路里核心</p>
+            <figure class="evolution-phone"><img src="assets/version-04.png" alt="V4 版本界面" loading="lazy" /></figure>
+            <div class="evolution-notes">
+              <span class="evolution-note evolution-note--1">只留剩余卡路里</span>
+              <span class="evolution-note evolution-note--2">情绪陪伴接住破防</span>
+              <span class="evolution-note evolution-note--3">盲盒套装不惩罚</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="evolution-caption">不断试错与做减法，只为把最核心的体验还给用户。</p>
+      </div>
+    </section>
+
+    <!-- 10 WOW FEATURE 01 -->
+    <section class="section wow wow-page wow-page--1" id="wow-1" aria-labelledby="wow-1-title">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="section-index">08 / WOW FEATURE 01</p>
+          <h2 class="section-title" id="wow-1-title">从「固定模板」，到「千人千面」。</h2>
+        </header>
+        <div class="feature-layout" data-reveal>
+          <div class="feature-notes">
+            <div class="feature-note feature-note--pain"><span>【痛点】</span><p>用户抱怨：“为什么所有人都是 1500 kcal？根本吃不饱。”</p></div>
+            <div class="feature-note feature-note--action"><span>【行动】</span><p>删除固定数值，改用身高体重动态计算。</p></div>
+            <div class="feature-note feature-note--gain"><span>【收益】</span><p>用范围代替绝对数字，减少标准焦虑。</p></div>
+          </div>
+          <div class="feature-visual feature-visual--steps">
+            <figure class="feature-shot feature-shot--old feature-shot--step1"><span class="feature-frame"><img src="assets/wow-02-before.png" alt="固定模板界面" loading="lazy" /></span><figcaption>之前 · 固定模板</figcaption></figure>
+            <figure class="feature-shot feature-shot--old feature-shot--step2"><span class="feature-frame"><img src="assets/wow-01-preference.png" alt="细化初始偏好界面" loading="lazy" /></span><figcaption>初始偏好</figcaption></figure>
+            <figure class="feature-shot feature-shot--now feature-shot--step3"><span class="feature-frame"><img src="assets/wow-01-range-new.png" alt="每日参考摄入界面" loading="lazy" /></span><figcaption>专属个性化范围 1900-2050</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11 WOW FEATURE 02 -->
+    <section class="section wow wow-page wow-page--2" id="wow-2" aria-labelledby="wow-2-title">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="section-index">09 / WOW FEATURE 02</p>
+          <h2 class="section-title" id="wow-2-title">第一眼，从「吃什么」变成「今日状态」。</h2>
+        </header>
+        <div class="feature-layout" data-reveal>
+          <div class="feature-notes">
+            <div class="feature-note feature-note--pain"><span>【痛点】</span><p>想先看看还剩多少，再决定吃什么。</p></div>
+            <div class="feature-note feature-note--action"><span>【行动】</span><p>今日摄入入口上移，核心功能重新排列。</p></div>
+            <div class="feature-note feature-note--gain"><span>【收益】</span><p>一打开就知道还剩多少，无需自己找。</p></div>
+          </div>
+          <div class="feature-visual feature-visual--pair">
+            <figure class="feature-shot feature-shot--old"><span class="feature-frame"><img src="assets/wow-02-before.png" alt="旧版首页" loading="lazy" /></span><figcaption>之前：首页以探索入口为主</figcaption></figure>
+            <figure class="feature-shot feature-shot--now"><span class="feature-frame"><img src="assets/wow-02-after.png" alt="新版首页" loading="lazy" /></span><figcaption>现在：今日状态与两个主入口，2 个主入口代替并列功能</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12 WOW FEATURE 03 -->
+    <section class="section wow wow-page wow-page--3" id="wow-3" aria-labelledby="wow-3-title">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="section-index">10 / WOW FEATURE 03</p>
+          <h2 class="section-title" id="wow-3-title">推荐 + 自己找，双选引擎。</h2>
+        </header>
+        <div class="feature-layout" data-reveal>
+          <div class="feature-notes">
+            <div class="feature-note feature-note--pain"><span>【痛点】</span><p>我想自己挑，但入口不够明显。</p></div>
+            <div class="feature-note feature-note--action"><span>【行动】</span><p>把“推荐”和“自己选”并列，再按场景分流。</p></div>
+            <div class="feature-note feature-note--gain"><span>【收益】</span><p>降低决策成本，保留自主权。</p></div>
+          </div>
+          <div class="feature-visual feature-visual--panel">
+            <div class="feature-panel">
+              <figure class="feature-shot feature-shot--old"><span class="feature-frame"><img src="assets/wow-03-before-02.png" alt="旧版单一推荐" loading="lazy" /></span><figcaption><b>BEFORE</b>只有系统推荐，不知道能自己选</figcaption></figure>
+              <figure class="feature-shot feature-shot--now"><span class="feature-frame"><img src="assets/wow-03-now-01.png" alt="小馋帮选与自己选" loading="lazy" /></span><figcaption><b>AFTER</b>让小馋帮你选 / 自己选</figcaption></figure>
+              <figure class="feature-shot feature-shot--now"><span class="feature-frame"><img src="assets/wow-03-now-02.png" alt="外卖做饭附近好店" loading="lazy" /></span><figcaption><b>AFTER</b>外卖 / 做饭 / 附近好店</figcaption></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13 WOW FEATURE 04 -->
+    <section class="section wow wow-page wow-page--4" id="wow-4" aria-labelledby="wow-4-title">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="section-index">11 / WOW FEATURE 04</p>
+          <h2 class="section-title" id="wow-4-title">用轻社交，代替孤独感。</h2>
+        </header>
+        <div class="feature-layout" data-reveal>
+          <div class="feature-notes">
+            <div class="feature-note feature-note--pain"><span>【痛点】</span><p>有朋友一起会更有趣，也可以互相鼓励。</p></div>
+            <div class="feature-note feature-note--action"><span>【行动】</span><p>在“小馋”页加入好友入口，看穿搭打卡。</p></div>
+            <div class="feature-note feature-note--gain"><span>【收益】</span><p>用陪伴和展示替代体重比较。</p></div>
+          </div>
+          <div class="feature-visual feature-visual--social">
+            <figure class="feature-shot feature-shot--old"><span class="feature-frame"><img src="assets/growth-avatar.png" alt="小馋分身页" loading="lazy" /></span><figcaption>我的分身 · 专属形象</figcaption></figure>
+            <figure class="feature-shot feature-shot--now"><span class="feature-frame"><img src="assets/growth-ranking.jpg" alt="好友打卡排行榜" loading="lazy" /></span><figcaption>好友搭子 · 打卡排行榜</figcaption></figure>
+            <figure class="feature-shot feature-shot--third"><span class="feature-frame"><img src="assets/growth-wardrobe.jpg" alt="衣帽间换装" loading="lazy" /></span><figcaption>衣帽间 · 百变换装</figcaption></figure>
+            <div class="feature-social">
+              <span class="social-icon social-icon--run">🏃</span>
+              <span class="social-icon social-icon--team">🤝</span>
+              <span class="social-icon social-icon--party">🎉</span>
+              <p>一起坚持不孤单</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 15 VISUAL SYSTEM · INTERFACE -->
+    <section class="section system system-page system-interface" id="system" aria-labelledby="system-title">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="section-index">12 / VISUAL SYSTEM · INTERFACE</p>
+          <h2 class="section-title" id="system-title">把温柔和清楚，做进每个核心界面。</h2>
+          <p class="section-note">首页、记录、趋势、小馋和我的，五个每天会反复进入的界面，共用一套颜色、圆角与反馈方式。</p>
+        </header>
+        <div class="interface-swatches" data-reveal>
+          <span style="--c:#F2C94B"><i></i><b>品牌黄</b></span>
+          <span style="--c:#252B27"><i></i><b>深墨</b></span>
+          <span style="--c:#F4F1EA"><i></i><b>暖米灰</b></span>
+          <span style="--c:#FFFDF8"><i></i><b>奶油白</b></span>
+          <span style="--c:#F2D5D2"><i></i><b>浅桃</b></span>
+          <span style="--c:#C9DDCA"><i></i><b>浅绿</b></span>
+          <span style="--c:#D8E9EF"><i></i><b>浅蓝</b></span>
+        </div>
+        <div class="interface-board" data-reveal>
+          <figure><span><b>01</b> HOME</span><img src="assets/screen-home.jpg" alt="首页" loading="lazy" /><figcaption><b>首页</b><span>今天在哪，下一步做什么</span></figcaption></figure>
+          <figure><span><b>02</b> TREND</span><img src="assets/screen-trend.jpg" alt="趋势" loading="lazy" /><figcaption><b>趋势</b><span>看一周变化，不纠结单日数字</span></figcaption></figure>
+          <figure><span><b>03</b> RECORD</span><img src="assets/screen-record.jpg" alt="记录中心" loading="lazy" /><figcaption><b>记录中心</b><span>拍照识别热量，也能记下心情</span></figcaption></figure>
+          <figure><span><b>04</b> COMPANION</span><img src="assets/screen-companion.jpg" alt="小馋陪伴页" loading="lazy" /><figcaption><b>小馋</b><span>好友、分身与陪伴入口</span></figcaption></figure>
+          <figure><span><b>05</b> PROFILE</span><img src="assets/screen-profile.jpg" alt="我的" loading="lazy" /><figcaption><b>我的</b><span>目标、口味与提醒设置</span></figcaption></figure>
+        </div>
+        <div class="system-banner" data-reveal><p>系统感不是每张页面重新发明一次，而是让五个核心界面都读懂同一种语言。</p><span>LIGHT / CLEAR / NON-JUDGMENTAL</span></div>
+      </div>
+    </section>
+
+    <!-- 16 VISUAL SYSTEM · CHARACTER -->
+    <section class="section system system-page system-character" id="system-character" aria-labelledby="system-character-title">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="section-index">13 / VISUAL SYSTEM · CHARACTER</p>
+          <h2 class="section-title" id="system-character-title">陪伴系统：内在的安抚，与外在的养成。</h2>
+          <p class="section-note">小馋既是一个治愈的 IP 图标，也是用户可以长期养成的虚拟分身。</p>
+        </header>
+
+        <div class="character-story" data-reveal>
+          <figure class="character-panel character-panel--emotion">
+            <span class="mini-label">IP SKETCHES / 角色手稿</span>
+            <h3>从手稿到最终 App 图标</h3>
+            <div class="sketch-stage">
+              <img class="sketch-stage__drawing" src="assets/ip-sketches-crop.png" alt="小馋角色手稿" loading="lazy" />
+            </div>
+            <figcaption><b>情绪小馋（仓鼠）：圆润、柔软、会回应。只倾听，不评判。</b></figcaption>
+          </figure>
+
+          <figure class="character-panel character-panel--growth">
+            <span class="mini-label">IDENTITY → WARDROBE / 角色养成</span>
+            <h3>分身系统：从虚拟形象到百变换装。</h3>
+            <div class="growth-stage">
+              <div class="growth-shot">
+                <span>初始分身</span>
+                <img src="assets/avatar.png" alt="初始虚拟分身" loading="lazy" />
+              </div>
+              <b class="growth-arrow" aria-hidden="true">➔</b>
+              <div class="growth-shot">
+                <span>换装结果</span>
+                <img src="assets/ip-outfit-dress.png" alt="换装后的虚拟分身" loading="lazy" />
+              </div>
+            </div>
+            <figcaption><b>游戏化分身：记录攒星星，星星换装扮，让坚持变成可积累的成就感。</b></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 17 VISUAL SYSTEM · WIDGETS -->
+    <section class="section system system-page system-widget" id="widgets" aria-labelledby="widgets-title">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="section-index">14 / VISUAL SYSTEM · WIDGETS</p>
+          <h2 class="section-title" id="widgets-title">把小馋，放到手机桌面上。</h2>
+          <p class="section-note">不用打开 App，今天的进度、提醒和一点陪伴，可以直接被看见。</p>
+        </header>
+        <div class="widget-spec" data-reveal>
+          <figure class="widget-spec__phone">
+            <div class="widget-phone-frame">
+              <img src="assets/widget-home-screen.png" alt="MOGU 桌面小组件总览" loading="lazy" />
+            </div>
+            <figcaption>小组件占的是桌面空间，承接的却是用户每天最先看到的那一眼。</figcaption>
+          </figure>
+
+          <div class="widget-spec__components">
+            <figure class="widget-spec__hero">
+              <img src="assets/widget-hero-crop.png" alt="MOGU 小馋连续记录组件" loading="lazy" />
+            </figure>
+            <div class="widget-spec__pair">
+              <figure><img src="assets/widget-morning-crop.png" alt="早安提醒小组件" loading="lazy" /></figure>
+              <figure><img src="assets/widget-check-crop.png" alt="今天也看看小组件" loading="lazy" /></figure>
+            </div>
+          </div>
+
+          <aside class="widget-spec__copy">
+            <p class="mini-label">FROM APP TO HOME SCREEN</p>
+            <h3>App 之外，<br />仍然记得用户。</h3>
+            <p class="widget-spec__lead">三种组件分别承担三种轻量时刻，不催促、不说教，只把下一步放在眼前。</p>
+            <div class="widget-spec__list">
+              <figure>
+                <span class="widget-spec__icon widget-spec__icon--yellow">🔥</span>
+                <figcaption><b>01 连续记录</b><span>把今天的进度放在手机桌面，打开手机就能看到。</span></figcaption>
+              </figure>
+              <figure>
+                <span class="widget-spec__icon widget-spec__icon--blue">☀️</span>
+                <figcaption><b>02 早安提醒</b><span>在一天开始时轻轻提一句，不增加额外的任务感。</span></figcaption>
+              </figure>
+              <figure>
+                <span class="widget-spec__icon widget-spec__icon--pink">🐹</span>
+                <figcaption><b>03 今天也看看</b><span>需要帮助时，用熟悉的小馋降低再次打开的压力。</span></figcaption>
+              </figure>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- 17 USABILITY TEST -->
+    <section class="section testing test-report" id="testing" aria-labelledby="testing-title">
+      <div class="wrap">
+        <header class="section-head test-head" data-reveal>
+          <p class="section-index">15 / USABILITY TEST</p>
+          <h2 class="section-title" id="testing-title">测试不是看"好不好看"，<br />而是看任务卡在哪。</h2>
+          <p class="section-note">5 位参与者 · 4 个任务场景 · 主持人先不提示入口，记录完成率与卡点，用户来自前期访谈被试。</p>
+        </header>
+
+        <div class="test-summary" data-reveal>
+          <div><strong>5</strong><span><b>位参与者</b><em>完成 4 场任务测试</em></span></div>
+          <div><strong>4</strong><span><b>个任务场景</b><em>找饭 / 记录 / 奖励</em></span></div>
+          <div><strong>1/4</strong><span><b>30 秒没能达成</b><em>最容易卡在第一步</em></span></div>
+          <div><strong>4</strong><span><b>类重要问题</b><em>优先在下一轮修复</em></span></div>
+        </div>
+
+        <p class="test-purpose">测试目的：验证用户能否在无提示下，顺畅完成“记录今天”、“深夜点外卖”等核心任务。</p>
+
+        <div class="findings-grid" data-reveal>
+          <article class="finding-card finding-card--positive">
+            <div class="finding-card__body">
+              <p class="finding-card__label">核心发现 01 / 正向验证</p>
+              <h3>记录功能被接受</h3>
+              <p class="finding-card__stat"><b>3/5</b><span>位用户独立完成记录</span></p>
+              <div class="finding-card__quote">
+                <p>“我拍了，但不知道它算得对不对？”</p>
+                <span>用户原声 · <em>需要明确结果</em></span>
+              </div>
+            </div>
+            <figure class="finding-card__media">
+              <div class="finding-phone">
+                <img src="assets/record.png" alt="拍照识别结果确认" loading="lazy" />
+                <span class="finding-phone__callout finding-phone__callout--yellow">拍照</span>
+              </div>
+            </figure>
+          </article>
+
+          <article class="finding-card finding-card--risk">
+            <div class="finding-card__body">
+              <p class="finding-card__label">核心发现 02 / 痛点放大</p>
+              <h3>深夜点外卖最怕看到警告</h3>
+              <p class="finding-card__stat"><b>1/5</b><span>位用户完成该任务</span></p>
+              <div class="finding-card__quote">
+                <p>“看到 1900 我就不想记了。”</p>
+                <span>用户原声 · <em>需要情绪承接</em></span>
+              </div>
+            </div>
+            <figure class="finding-card__media">
+              <div class="finding-phone">
+                <img src="assets/trend.png" alt="趋势与热量反馈" loading="lazy" />
+                <span class="finding-phone__callout finding-phone__callout--red">1900</span>
+              </div>
+            </figure>
+          </article>
+        </div>
+
+        <div class="test-report-banner" data-reveal><p><b>▶ 下一步行动：</b>优先修复「深夜外卖」场景的情绪承接问题，把冷冰冰的警告换成有温度的陪伴。</p></div>
+      </div>
+    </section>
+
+    <!-- 14 CLOSING -->
+    <section class="section closing" id="demo" aria-labelledby="closing-title">
+      <div class="wrap closing-poster" data-reveal>
+        <p class="section-index">16 / REFLECTION</p>
+        <h2 class="closing-headline" id="closing-title">不是更准确的记录工具，<br />是失败之后仍能继续的路径。</h2>
+        <div class="closing-actions">
+          <a class="btn btn-primary" href="https://chanban-app.pages.dev/#/me" target="_blank" rel="noopener">打开 MOGU App <span>↗</span></a>
+          <a class="text-link" href="#top">回到开头 ↑</a>
+        </div>
+        <div class="closing-finale">
+          <p class="closing-tagline">MOGU 馋伴 · 让每一次没做到，都还有下一次。</p>
+          <img class="closing-mascot" src="assets/mogu-app-icon.png" alt="MOGU 馋伴 App 图标" loading="lazy" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="deck-controls" aria-label="演示导航">
+    <button class="deck-btn" type="button" data-deck-prev aria-label="上一页">←</button>
+    <span class="deck-count"><b data-deck-current>1</b><i>/</i><span data-deck-total>1</span></span>
+    <button class="deck-btn" type="button" data-deck-next aria-label="下一页">→</button>
+  </div>
+
+  <footer class="footer"><div class="wrap"><span>MOGU · 馋伴 / 产品设计案例</span><span>2026 · CASE STUDY</span><a href="#top">回到顶部 ↑</a></div></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
